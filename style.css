@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif; 
+}
+
+:root {
+    --background: rgb(24, 24, 24);
+    --second-background: rgb(21, 21, 21);
+    --text-color: #ffffff; 
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--second-background);
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: var(--text-color);
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.hero-content {
+    text-align: center;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+#about {
+    background-color: var(--second-background);
+}
+
+#projects {
+    background-color: rgb(30, 30, 30); 
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project {
+    background-color: var(--second-background);
+    padding: 1rem;
+}
+
+#contact {
+    background-color: var(--second-background);
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contactForm input,
+#contactForm textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+}
+
+#contactForm button {
+    background-color: #333; 
+    color: var(--text-color);
+    padding: 0.75rem 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+}
